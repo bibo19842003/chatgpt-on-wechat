@@ -10,6 +10,14 @@ def create_bot(bot_type):
     :param bot_type: bot type code
     :return: bot instance
     """
+    
+
+    from bot.localapi.local_api_bot import LocalApiBot
+
+    return LocalApiBot()
+
+    
+    
     if bot_type == const.BAIDU:
         # Baidu Unit对话接口
         from bot.baidu.baidu_unit_bot import BaiduUnitBot
